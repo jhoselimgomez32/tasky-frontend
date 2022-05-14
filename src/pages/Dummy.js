@@ -1,11 +1,11 @@
-import { Box } from "@mui/material";
-import React from "react";
-import axios from "axios";
+import { Box } from '@mui/material';
+import React from 'react';
+import axios from 'axios';
 
 /** Componente dummy usando el API dummy de Tasky */
 class DummyPage extends React.Component {
   state = {
-    dummies: [{ id: "1231-3123-3123-3123", dummyValue: "Lorem ipsum" }],
+    dummies: [{ id: '1231-3123-3123-3123', dummyValue: 'Lorem ipsum' }],
   };
 
   componentDidMount() {

@@ -1,19 +1,19 @@
-import { PublicPage, HomePage, AboutPage, DummyPage } from "../pages";
+import { PublicPage, HomePage, AboutPage, DummyPage } from '../pages';
 
 const MainRoutes = {
-  path: "/",
+  path: '/',
   element: <PublicPage />,
   children: [
     {
-      path: "home",
+      path: 'home',
       element: <HomePage />,
     },
     {
-      path: "about",
+      path: 'about',
       element: <AboutPage />,
     },
     {
-      path: "dummies",
+      path: 'dummies',
       element: <DummyPage />,
     },
   ],

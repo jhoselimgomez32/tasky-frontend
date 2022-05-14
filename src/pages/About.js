@@ -1,5 +1,5 @@
-import { Paper, Typography, Box } from "@mui/material";
-import React from "react";
+import { Paper, Typography, Box } from '@mui/material';
+import React from 'react';
 
 class AboutPage extends React.Component {
   render() {
@@ -7,7 +7,7 @@ class AboutPage extends React.Component {
       <Box sx={{ flexGrow: 1, p: 6 }}>
         <Paper
           elevation={2}
-          sx={{ width: 400, height: 400, verticalAlign: "bottom" }}
+          sx={{ width: 400, height: 400, verticalAlign: 'bottom' }}
           align="center"
         >
           <Typography variant="h6">Aplicación de ejemplo Tasky.</Typography>

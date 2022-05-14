@@ -1,7 +1,7 @@
-import { useRoutes } from "react-router-dom";
+import { useRoutes } from 'react-router-dom';
 
-import config from "../config";
-import MainRoutes from "./MainRoutes";
+import config from '../config';
+import MainRoutes from './MainRoutes';
 
 export default function AppRoutes() {
   return useRoutes([MainRoutes], config.basename);
