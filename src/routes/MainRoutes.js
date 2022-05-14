@@ -1,4 +1,7 @@
-import { PublicPage, HomePage, AboutPage, DummyPage } from '../pages';
+import React from 'react';
+import {
+  PublicPage, HomePage, AboutPage, DummyPage,
+} from '../pages';
 
 const MainRoutes = {
   path: '/',

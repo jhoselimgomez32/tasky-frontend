@@ -1,7 +1,7 @@
 import { Paper, Typography, Box } from '@mui/material';
 import React from 'react';
 
-class AboutPage extends React.Component {
+class AboutPage extends React.PureComponent {
   render() {
     return (
       <Box sx={{ flexGrow: 1, p: 6 }}>

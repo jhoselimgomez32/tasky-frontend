@@ -8,15 +8,14 @@ import {
   Typography,
   Divider,
   Drawer,
-} from '@mui/material';
-import {
+
   ListItemText,
   ListItemIcon,
   ListItem,
   ListItemButton,
   List,
 } from '@mui/material';
-import { styled, useTheme } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import HomeIcon from '@mui/icons-material/Home';
@@ -92,7 +91,7 @@ const AppDrawer = styled(Drawer, {
 }));
 
 export default function Header() {
-  const theme = useTheme();
+  // const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
@@ -124,7 +123,7 @@ export default function Header() {
             color="inherit"
             component="div"
             sx={{ flexGrow: 1 }}
-          ></Typography>
+          />
           <IconButton
             edge="end"
             color="inherit"
@@ -220,7 +219,7 @@ export default function Header() {
                     justifyContent: 'center',
                   }}
                 >
-                  <InboxIcon />
+                  {index % 2 === 0 ? <InboxIcon /> : <InboxIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>

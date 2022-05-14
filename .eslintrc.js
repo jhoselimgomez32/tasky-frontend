@@ -13,9 +13,7 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'node/no-unsupported-features/es-syntax': [
-      'error',
-      { ignores: ['modules'] },
-    ],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/prop-types': ['off'],
   },
 };
