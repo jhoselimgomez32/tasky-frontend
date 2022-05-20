@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Header from "./Header";
-import Footer from "./Footer";
-import { Box } from "@mui/material";
-import CssBaseline from "@mui/material/CssBaseline";
+import { Box } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+import Header from './Header';
+import Footer from './Footer';
 
 class Layout extends React.Component {
   constructor(props) {
@@ -12,12 +12,15 @@ class Layout extends React.Component {
   }
 
   render() {
+    const {
+      children,
+    } = this.props;
     return (
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <Header />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-          {this.props.children}
+          {children}
         </Box>
         <Footer />
       </Box>

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-class HomePage extends React.Component {
+class HomePage extends React.PureComponent {
   render() {
     return (
       <div>

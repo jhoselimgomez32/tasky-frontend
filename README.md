@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Tasky
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/814d48608b544f66b17618e014f99931)](https://www.codacy.com/gh/wjfatuan/tasky-frontend/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=wjfatuan/tasky-frontend&amp;utm_campaign=Badge_Grade)
 
-## Available Scripts
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-In the project directory, you can run:
+Frontend (aplicación web) del proyecto Tasky del curso de Construcción de software. Esta aplicación está construida con [React](https://reactjs.org/) y [MUI](https://mui.com/core/). Permite la interacción con el API de Tasky ofreciendo distintas funcionalidades.
 
-### `npm start`
+- [Requisitos](#requisitos)
+- [Como contribuir a este proyecto](#como-contribuir-a-este-repositorio)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Compilar y ejecutar la aplicación](#compilar-y-ejecutar-su-aplicación)
+- [Verificar la calidad del código](#verificar-la-calidad-del-código)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Requisitos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Debe tener instaladas las siguientes herramientas:
 
-### `npm test`
+- [Visual Studio Code](https://code.visualstudio.com/) (u otro editor de su preferencia)
+- [NodeJS](https://nodejs.org/en/)
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como contribuir a este repositorio
 
-### `npm run build`
+Una vez tenga asignada una tarea del proyecto en Trello, puede contribuir a este repositorio siguiendo estos pasos:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Cree un [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) de este repositorio en Github, esto dejará una copia en su cuenta de Github.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Clone su fork localmente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - Vaya a Github y navegue al fork de este repositorio.
+   - Copie el link HTTPS a su fork.
+   - Abra una terminal.
+   - Cambiese al directorio de trabajo donde quiere dejar la copia del repositorio.
+   - Escriba `git clone` y pegue la URL copiada anteriormente, por ejemplo:
 
-### `npm run eject`
+     ```git
+     git clone https://github.com/YOUR-USERNAME/tasky-frontend
+     ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Presione enter, esto creara la copia local del repositorio
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Haga los cambios requeridos en la tarea y subalos usando el ciclo normal de Git (`git add`, `git commit`, y `git push`)
+    - En cada commit asegurese de poner un comentario adecuado para el cambio, incluyendo el número de su tarea. Por ejemplo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+      ```git
+      git commit -m "Tarea U03: Se modifica la p[agina] XXXX agregando el campo YYYY"
+      ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    - Revise el ejemplo `Dummy` si tiene dudas sobre como implementar una nueva pantalla.
 
-## Learn More
+4. Haga una solicitud de cambios (también conocido como Pull Resuqet o PR) al repositorio principal. En este punto los cambios que hizo deben estar funcionando localmente.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - Vaya a Github y navegue hasta el fork creado anteriormente.
+   - Debería ver allí sus cambios.
+   - De clic en **Contribuir** y luego en **Abrir solicitud de cambios**.
+   - Allí verá las diferencias enre el repositorio destino y sus cambios.
+   - Asegurese qde que no haya conflictos, de haber conflictos solucionelos y suba las correcciones.
+   - Finalmente de clic en **Crear solicitud de cambios**.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Notifique la solicitud de cambios por el chat del grupo y pida que alguién los revise. Recuerde que la revisión hace parte de su calificación, así que ayude a sus compañeros revisando también sus solicitudes de cambios y aprobando cuando este satisfecho con el código.
 
-### Code Splitting
+> **Nota**: Asegurese, antes de iniciar su trabajo, de actualizar su copia local con el repositorio remoto. De esta manera puede evitar posibles conflictos de código con sus compañeros. Recuerde que la comunicación es clave, use el chat del grupo para validar posibles conflictos o cambios en el código. Es posible que alguién haya creado o deba crear clases que usted necesita.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Estructura del proyecto
 
-### Analyzing the Bundle Size
+La siguiente tabla muestra la estructura de carpetas/paquetes del proyecto. **Asegurese de poner su código en la carpeta correcta**. Si duranta euna revisión de código encuentra que sus compañero cometio un error pongalo como comentario en su revisión de código.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Carpeta | Descripción |
+|---------|-------------|
+|`public`|Código fuente del contenido estático de la aplicación|
+|`src`|Código fuente de la aplicación|
+|`src/layout`|Templates o layouts|
+|`src/pages`|Componentes con las páginas de la aplicación|
+|`src/routes`|Componentes con las rutas disponibles en la aplicación|
+|`src/App.js`|Componente principal de la aplicación|
 
-### Making a Progressive Web App
+## Compilar y ejecutar su aplicación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Para probar de forma local su aplicación siga los siguientes pasos:
 
-### Advanced Configuration
+1. Asegurese de que su código no contiene errores.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Desde la terminal ejecute el siguiente comando para verificar que las pruebas funcionan:
 
-### Deployment
+   ```bash
+   npm test
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. Desde la terminal ejecute el siguiente comando para inciar el servidor de forma local:
 
-### `npm run build` fails to minify
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Se abrirá la apliación en su navegador en la URL http://localhost:3000
+
+## Verificar la calidad del código
+
+Puede verificar distintos atributos de calidad del código fuente del proyecto:
+
+- [Airbnb JS Guidelines](https://github.com/airbnb/javascript): Puede verificar el cumplimiento de estos estándares:
+
+  1. Ejecute el siguiente comando para generar el reporte de linter:
+
+     ```bash
+     npx eslint
+     ```

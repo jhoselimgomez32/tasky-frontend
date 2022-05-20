@@ -1,9 +1,10 @@
-import AppRoutes from "./routes";
-import Layout from "./layout/Layout";
-import { BrowserRouter, Outlet } from "react-router-dom";
-import { StyledEngineProvider } from "@mui/material/styles";
+import React from 'react';
+import { BrowserRouter, Outlet } from 'react-router-dom';
+import { StyledEngineProvider } from '@mui/material/styles';
+import AppRoutes from './routes';
+import Layout from './layout/Layout';
 
-const App = () => {
+function App() {
   return (
     <StyledEngineProvider injectFirst>
       <BrowserRouter>
@@ -14,6 +15,6 @@ const App = () => {
       </BrowserRouter>
     </StyledEngineProvider>
   );
-};
+}
 
 export default App;
