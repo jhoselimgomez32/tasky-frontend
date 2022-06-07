@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import axios from 'axios';
+import AddTaskListForm from './forms/AddTaskListForm';
 
 /** Componente dummy usando el API dummy de Tasky */
 class TaskListPage extends React.Component {
@@ -28,11 +29,11 @@ class TaskListPage extends React.Component {
             {tasklists.map((tasklist) => (
               <li>
                 <b>{tasklist.name}</b>
-                <p>{tasklist.color}</p>
               </li>
             ))}
           </ul>
         </Box>
+        <AddTaskListForm />
       </div>
     );
   }
